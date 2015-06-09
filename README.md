@@ -1,12 +1,9 @@
-# pict_share
+# party snap
 
 a picture collecting web application.  
-pict_share uses modules below.
+party snap uses modules below.
 - paperclip
-- jpmobile
+- websocket
 - jquery-rails
 - remotipart
-- passenger & apache-upload-progress-module
 - bootstrap, etc.,
-
-pict_share is deployed @ http://pictcollect.dip.jp
