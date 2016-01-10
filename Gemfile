@@ -23,6 +23,8 @@ gem 'annotate', group: :development
 gem 'rake_shared_context', group: :development
 gem 'rspec', group: :development
 gem 'diff-lcs'
+gem 'rake'
+gem 'json'
 
 gem 'sass-rails'
 gem 'coffee-rails'
