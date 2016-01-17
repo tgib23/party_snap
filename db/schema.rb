@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20121014034924) do
+ActiveRecord::Schema.define(version: 20160117121906) do
 
   create_table "albums", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20121014034924) do
     t.integer  "ncc"
     t.string   "remember_a_token"
     t.string   "directory_strings"
+    t.integer  "plan"
   end
 
   add_index "albums", ["remember_a_token"], name: "index_albums_on_remember_a_token"
