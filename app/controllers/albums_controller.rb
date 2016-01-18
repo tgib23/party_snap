@@ -160,6 +160,6 @@ class AlbumsController < ApplicationController
   end
 
   def album_params
-    params.require(:album).permit(:name, :content, :photos_attributes, :uploaded_file, :revision, :password, :password_confirmation, :ncc, :directory_strings)
+    params.require(:album).permit(:name, :content, :photos_attributes, :uploaded_file, :revision, :password, :password_confirmation, :ncc, :directory_strings, :plan)
   end
 end

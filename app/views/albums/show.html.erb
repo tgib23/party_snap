@@ -19,6 +19,11 @@
     <%=@album.photos.last.updated_at.in_time_zone('Tokyo').strftime("%Y-%m-%d %H:%M:%S") %>
   <% end %>
 </p>
+<p>
+  <b>アルバムプラン:</b>
+    <%= @album.plan %>
+</p>
+
 <% if !request.smart_phone? %>
  <%= link_to 'ダウンロード', 'http://pictcollect.dip.jp/system/pict_share/zips/' + @album.id.to_s + '_' + @album.directory_strings + '.zip', class: "btn btn-link" %>
 <% end %>

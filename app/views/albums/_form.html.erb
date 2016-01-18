@@ -21,6 +21,10 @@
     <%= f.radio_button :ncc, 1 %> &nbsp &nbsp ノンログインユーザに参照のみ許す<br />
     <%= f.radio_button :ncc, 2, { :checked => true } %> &nbsp &nbsp ログインユーザに参照・追加を許す（パスワードの入力が必要です）<br />
     <%= f.radio_button :ncc, 3 %> &nbsp &nbsp ログインユーザに参照のみ許す（パスワードの入力が必要です）<br /><br />
+    <%= f.label :album_plan, "プラン" %>
+    <%= f.radio_button :plan, 0 %> &nbsp &nbsp プラン0 <br />
+    <%= f.radio_button :plan, 1 %> &nbsp &nbsp プラン1 <br />
+    <%= f.radio_button :plan, 2 %> &nbsp &nbsp プラン2 <br />
     <%= f.label :password, "パスワード" %>
     <%= f.password_field :password %>
     <%= f.label :confirmation, "パスワード（確認用)" %>
